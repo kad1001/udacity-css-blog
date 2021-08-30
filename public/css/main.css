@@ -1,0 +1,92 @@
+* {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+body {
+    background: #FFE0B2;
+}
+
+.container {
+    border: 2px solid green;
+    padding: 2em;
+    display: grid;
+    /* grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 50px 600px; */
+    grid-template-areas:
+    "hd hd hd hd"
+    "feat feat feat feat"
+    "main main main main"
+    "ft ft ft ft";
+}
+
+.box {
+    width: 100%;
+    border: 1px solid pink;
+    grid-area: hd;
+}
+
+header {
+    border: 2px solid red;
+    padding: 1em;
+    grid-area: hd;
+    font-weight: bold;
+}
+
+.float-right {
+    float: right;
+}
+
+.column {
+    border: 2px solid purple;
+    grid-area: feat;
+}
+
+footer {
+    grid-area: ft;
+}
+
+article {
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.main-section {
+    grid-area: main;
+}
+
+.centered {
+    align-content: center;
+}
+
+a {
+    color: red
+}
+
+
+/* @media (min-width: 800px) {
+    header h1 {
+        font-size: 2.5 rem;
+    }
+    img {
+        width: 50%;
+    }
+    .text {
+        width: 50%;
+    }
+} */
+
+@media (min-width: 200px) and (max-width: 799px) {
+    /* .text {
+        width: 100%;
+    } */
+    /* .feature {
+        flex-direction: row;
+    }
+    .featured-image {
+        width: 100%;
+    } */
+}
+
+/* *, :after, :before {
+    box-sizing: border-box;
+} */

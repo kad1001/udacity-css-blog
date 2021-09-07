@@ -1,0 +1,100 @@
+* {
+    /* font-family: 'IBM Plex Sans KR', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    ;
+}
+
+/* Colors */
+.red {
+    color: #F51720;
+}
+
+.pink {
+    color: #FA26A0;
+}
+
+.gold {
+    color: #F8D210;
+}
+
+.cyan {
+    color: #2FF3E0;
+}
+
+.grid-container {
+    border: 2px solid #2FF3E0;
+    padding: 2em;
+    grid-gap: 10px;
+    display: grid;
+    align-content: center;
+    grid-template-areas:
+        "header header header header header header"
+        "feat feat feat img img img"
+        "main main main right right right"
+        "footer footer footer footer footer footer";
+}
+
+.box {
+    width: 100%;
+    border: 1px solid pink;
+}
+
+header {
+    border: 2px solid #FA26A0;
+    padding: 1em;
+    grid-area: hd;
+}
+
+.featured-image {
+    grid-area: img;
+    position: relative;
+}
+
+.feature {
+    grid-area: feat;
+}
+
+footer {
+    grid-area: footer;
+}
+
+article {
+    border: 8px solid #F8D210;
+    padding: 1rem;
+}
+
+.left-section {
+    grid-area: main;
+}
+
+.right-section {
+    grid-area: right;
+}
+.site-header {
+    grid-area: header;
+}
+
+.secondary-text {
+    font-size: medium;
+}
+
+.brand {
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Phones */
+@media (min-width: 200px) and (max-width: 799px) {
+    .grid-container {
+        grid-template-areas:
+            "header header header header header header"
+            "img img img img img img"
+            "feat feat feat feat feat feat"
+            "main main main main main main"
+            "right right right right right right"
+            "footer footer footer footer footer footer";
+    }
+}

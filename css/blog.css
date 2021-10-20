@@ -1,10 +1,6 @@
-@import "main.css";
-
 .author-card {
     display: flex;
     flex-direction: row;
-    /* padding: 1rem; */
-    /* gap: 10px; */
     background-color: royalblue;
     justify-content: center;
     min-width: 10rem;
@@ -24,4 +20,13 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+
+.main-article {
+    grid-area: "main";
+    height: 80%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }

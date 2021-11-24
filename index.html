@@ -10,63 +10,67 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
-    <title>Home</title>
+    <title>Kelly's Recipes</title>
 </head>
 
 <body>
+    <header class="site-header">
+        <ul>
+            <li>
+                <a class="brand" href="#">Home</a>
+            </li>
+            <li>
+                <a class="link" href="blog.html">All Recipes</a>
+            </li>
+        </ul>
+    </header>
     <div class="grid-container">
-        <!-- <section> -->
-        <header class="site-header">
-            <ul>
-                <!-- <li class="logo">
-                        <img src="https://picsum.photos/536/354" alt="Random photo for logo">
-                    </li> -->
-                <li>
-                    <a class="brand" href="#">Home</a>
-                </li>
-                <li>
-                    <a class="link" href="blog.html">Blog</a>
-                </li>
-            </ul>
-        </header>
-        <!-- </section> -->
-
-        <div class="feature">
-            <div class="featured-image">
-                <img src="https://picsum.photos/536/354" class="float-right" alt="Lorem Picsum">
+        <div>
+            <div class="flexing">
+                <div class="featured-image">
+                    <img src="https://picsum.photos/536/354" alt="Lorem Picsum">
+                    <i>This is a random image.</i>
+                </div>
+                <div class="feature">
+                    <h1>Recipes by Kelly</h1>
+                    <h2 class="secondary-text">These are recipes that I have made. I will probably make them again, too.
+                        You are welcome to make them yourself.
+                    </h2>
+                    <i>Note: For recipes that I don't know how to cook, I made my best guess as to how it would be
+                        cooked.</i>
+                </div>
             </div>
-            <h1>Lorem ipsum dolor sit amet consectetur</h1>
-            <h2 class="secondary-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eum quasi totam
-                provident? Quisquam facilis earum dolorum vero quos qui? Eligendi sint ad odio nisi labore nemo tempore?
-                Aut, architecto!</h2>
-            <!-- </div> -->
 
+            <div class="recent-posts">
+                <h2 class="centered">Latest Recipes</h2>
+                <div class="recipe-cards">
+                    <article>
+                        <a href="recipes/bread.html">
+                            <h3 class="centered">Bread</h3>
+                        </a>
+                        <p>This is a simple bread recipe from my grandparents.</p>
+                    </article>
 
-            <div class="container">
-                <!-- <div class="left-section"> -->
-                <article>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione expedita sapiente voluptates
-                        labore
-                        laborum saepe temporibus necessitatibus esse optio quia quidem deleniti, rerum, officia omnis
-                        modi
-                        reiciendis laudantium dolores quasi? <a href="blog.html">Read more</a></p>
-                </article>
-                <!-- </div> -->
-                <!-- <div class="right-section"> -->
-                <article>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsam sapiente esse nobis
-                        nisi
-                        numquam dicta magnam ipsum alias corporis quo repellat praesentium laborum, dolores perspiciatis
-                        qui
-                        asperiores consequatur libero? <a href="blog.html">Read more</a></p>
-                </article>
-                <!-- </div> -->
+                    <article>
+                        <a href="chicken.html">
+                            <h3 class="centered">Chicken</h3>
+                        </a>
+                        <p>This is a chicken recipe from the internet.</p>
+                    </article>
+
+                    <article>
+                        <a href="brussels.html">
+                            <h3 class="centered">Brussels Sprouts</h3>
+                        </a>
+                        <p>This is a brussels sprouts recipe from the internet.</p>
+                    </article>
+                </div>
             </div>
         </div>
-        <div class="footer">
-            <footer>Lorem ipsum dolor sit amet consectetur adipisicing elit. 2021</footer>
-        </div>
+
     </div>
+    <div class="footer">
+        <footer>Copyright Kelly Davis 2021</footer>
     </div>
 </body>
 

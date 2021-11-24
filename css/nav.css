@@ -6,6 +6,11 @@ ul {
     margin: 0;
 }
 
+.site-header {
+    margin-top: 0px;
+    display: flex;
+}
+
 li {
     margin: 0 1em;
 }

@@ -2,6 +2,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Colors */
 .red {
     color: #F51720;
@@ -19,17 +23,24 @@
     color: #2FF3E0;
 }
 
+.recent-posts {
+    padding: 2em;
+    grid-area: main;
+}
+
+.recipe-cards {
+    display: flex;
+    flex-direction: row;
+} 
+
 .grid-container {
     border: 2px solid #2FF3E0;
-    padding: 2em;
-    grid-gap: 10px;
+    grid-gap: 20px;
     display: grid;
     align-content: center;
     grid-template-areas:
-        "header header header header header header"
-        "feat feat feat img img img"
-        "main main main right right right"
-        "footer footer footer footer footer footer";
+        "img img feat feat feat feat"
+        "main main main main main main";
 }
 
 .box {
@@ -45,21 +56,21 @@ header {
 
 .featured-image {
     grid-area: img;
-    position: relative;
+}
+
+.flexing {
+    display: flex;
+    padding: 4em;
 }
 
 .feature {
     grid-area: feat;
+    padding: 2em;
 }
 
 article {
     border: 8px solid #F8D210;
     padding: 1rem;
-}
-
-.site-header {
-    grid-area: header;
-    display: flex;
 }
 
 .secondary-text {
@@ -89,12 +100,20 @@ img {
 
 /* Phones */
 @media (min-width: 200px) and (max-width: 799px) {
+    .flexing {
+        flex-direction: column;
+    }
+
+    .recipe-cards {
+        flex-direction: column;
+    }
+
     .grid-container {
+        display: grid;
+        grid-auto-flow: column;
         grid-template-areas:
-            "header header header header header header"
             "img img img img img img"
             "feat feat feat feat feat feat"
-            "main main main main main main"
-            "footer footer footer footer footer footer";
+            "main main main main main main";
     }
 }

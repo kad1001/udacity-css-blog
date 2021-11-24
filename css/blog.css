@@ -24,7 +24,7 @@
 
 
 .main-article {
-    grid-area: "main";
+    grid-area: main;
     height: 80%;
     max-width: 100%;
     display: flex;
